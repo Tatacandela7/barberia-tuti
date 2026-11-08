@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbería Tuti: cortes clásicos y modernos, arreglo de barba y atención personalizada. Reservá tu próximo turno.">
+    <link rel="icon" href="imagenes/favicon.png" type="image/png">
+    <title>Barbería Tuti</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Barbería Tuti | Más que un corte">
+    <meta property="og:description" content="Cortes clásicos y modernos, arreglo de barba y atención personalizada. ¡Reservá tu turno!">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    
+</head>
+
+<body>
+    <header>
+
+    <h1 class="logo">BARBERÍA <span>TUTI</span></h1>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+</header>
+<main id="inicio">
+
+    <div class="contenido-inicio">
+
+        <h2>EL ESTILO LO MARCÁS VOS.</h2>
+
+        <p>Encontrá tu mejor versión en Barbería Tuti.</p>
+
+        <a href="#servicios">VER NUESTROS SERVICIOS</a>
+
+    </div>
+
+</main>
+
+<section id="servicios">
+
+    <h2>NUESTROS SERVICIOS</h2>
+
+    <div class="contenedor-servicios">
+
+        <div class="tarjeta-servicio">
+            <h3>Corte clásico</h3>
+            <p>Cortes tradicionales y modernos.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+            <h3>Arreglo de barba</h3>
+            <p>Perfilado y cuidado de barba.</p>
+        </div>
+
+        <div class="tarjeta-servicio">
+            <h3>Corte + Barba</h3>
+            <p>Un servicio completo para tu estilo.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="galeria">
+
+    <h2>NUESTROS TRABAJOS</h2>
+
+    <p>Conocé algunos de nuestros estilos y cortes.</p>
+
+    <div class="contenedor-galeria">
+
+        <img src="imagenes/Cortepelo1.jpeg" alt="Corte de cabello con degradado">
+
+        <img src="imagenes/Cortepelo2.jpg" alt="Estilo de corte masculino moderno">
+
+        <img src="imagenes/Cortepelo3.jpeg" alt="Trabajo de barbería y perfilado">  
+
+    </div>
+
+</section>
+
+<section id="contacto">
+
+    <h2>RESERVÁ TU TURNO</h2>
+
+    <p>Estamos listos para darte tu próximo estilo.</p>
+
+    <p>Comunicate con nosotros y coordiná tu visita.</p>
+
+    <form id="formulario-reserva">
+
+        <h3>COMPLETÁ TUS DATOS</h3>
+
+    <label for="nombre">Nombre completo</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" minlength="3" required>
+    
+   <label for="telefono">Número de teléfono</label>
+    <input
+    type="tel"
+    id="telefono"
+    name="telefono"
+    placeholder="Tu teléfono"
+    minlength="8"
+    maxlength="15"
+    pattern="[0-9]{8,15}"
+    title="Ingresá un teléfono de entre 8 y 15 números"
+    required
+>
+    
+   <label for="servicio">Servicio que deseás</label>
+    <select id="servicio" name="servicio" required>
+    <option value="">Seleccioná un servicio</option>
+    <option value="Corte clásico">Corte clásico</option>
+    <option value="Arreglo de barba">Arreglo de barba</option>
+    <option value="Corte + Barba">Corte + Barba</option>
+</select>
+
+    <button type="submit">Enviar reserva</button>
+
+</form>
+
+<p id="confirmacion-reserva"></p>
+
+   <a href="https://wa.me/5491112345678" target="_blank" rel="noopener noreferrer">
+        Consultar por WhatsApp
+    </a>
+
+    <br>
+
+    <button id="boton-bienvenida">Saludar</button>
+
+    <p id="mensaje-bienvenida"></p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Barbería Tuti - Todos los derechos reservados.</p>
+
+    <p>Más que un corte, tu propio estilo.</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

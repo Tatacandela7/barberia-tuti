@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111111;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #080808;
+    border-bottom: 2px solid #c59d5f;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #c59d5f;
+    transform: translateY(-3px);
+}
+
+main {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.75)),
+        url("imagenes/Cortepelo1.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.contenido-inicio {
+    max-width: 800px;
+    animation: aparecer 1.2s ease-out;
+}
+
+main h2 {
+    font-size: 55px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+
+}
+
+main p {
+    font-size: 20px;
+    color: #eeeeee;
+    margin-bottom: 30px;
+}
+
+main a {
+    display: inline-block;
+    background-color: #c59d5f;
+    color: #111111;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+main a:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+#servicios {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#servicios h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(197, 157, 95, 0.25);
+}
+
+#galeria {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+#galeria h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(197, 157, 95, 0.25);
+}
+
+
+#galeria p {
+    color: #cccccc;
+    font-size: 18px;
+}
+#galeria img {
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    margin: 25px 0 0;
+    transition: 0.4s;
+    filter: brightness(0.85);
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+.contenedor-galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+#contacto {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #1c1c1c;
+}
+
+#contacto h2 {
+    font-size: 36px;
+    color: #c59d5f;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(197, 157, 95, 0.25);
+}
+
+
+#contacto p {
+    color: #cccccc;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+#contacto a {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+#contacto a:hover {
+    background-color: #1da851;
+    transform: scale(1.05);
+}
+footer {
+    background-color: #080808;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    color: #999999;
+    font-size: 14px;
+}
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main h2 {
+        font-size: 30px;
+    }
+
+   #servicios .tarjeta-servicio {
+    width: 80%;
+    }
+
+   #galeria img {
+    width: 80%;
+    max-width: 100%;
+    height: 300px;  
+    margin: 15px auto;
+}
+
+}
+html {
+    scroll-behavior: smooth;
+}
+#boton-bienvenida {
+    background-color: #c59d5f;
+    color: #111111;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#boton-bienvenida:hover {
+    background-color: white;
+}
+#formulario-reserva {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 35px;
+    background-color: #111111;
+    border: 1px solid #c59d5f;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+#formulario-reserva input,
+#formulario-reserva select {
+    padding: 14px;
+    border: 1px solid #555555;
+    border-radius: 5px;
+    background-color: #222222;
+    color: white;
+    font-size: 16px;
+}
+
+#formulario-reserva button {
+    background-color: #c59d5f;
+    color: #111111;
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+#confirmacion-reserva {
+    color: #c59d5f;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: aparecer 1s ease-out;
+}
+
+.logo span {
+    color: #c59d5f;
+    font-size: 1.15em;
+    text-shadow: 2px 2px 5px rgba(197, 157, 95, 0.3);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contenedor-servicios {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    width: 100%;
+}
+
+.tarjeta-servicio {
+    background-color: #181818;
+    border: 1px solid #c59d5f;
+    padding: 30px;
+    width: 250px;
+    border-radius: 8px;
+    text-align: center;
+    transition: 0.3s;
+    animation: aparecer 1s ease-out;
+}
+
+.tarjeta-servicio h3 {
+    color: #c59d5f;
+    margin-bottom: 15px;
+}
+
+.tarjeta-servicio p {
+    color: #cccccc;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-8px);
+    background-color: #252525;
+}
+
+#formulario-reserva h3 {
+    color: #c59d5f;
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+
+#formulario-reserva button:hover {
+    background-color: white;
+    transform: scale(1.03);
+}
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
+
+
