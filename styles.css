@@ -362,6 +362,7 @@ h1, h2, h3 {
     height: auto;
     display: block;
     margin: 0 auto;
+    margin-top: -8px;
 }
 
 
