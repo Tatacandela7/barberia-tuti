@@ -65,11 +65,11 @@ formulario.addEventListener("submit", function(event) {
 
 const numeroWhatsApp = "5491168584482";
 
-const mensajeWhatsApp = 
-    "Hola, quiero solicitar un turno en Barbería Tuty.%0A%0A" +
-    "Nombre: " + nombreCliente + "%0A" +
-    "Teléfono: " + telefonoCliente + "%0A" +
-    "Servicio: " + servicioElegido + "%0A" +
+const mensajeWhatsApp =
+    "Hola, quiero solicitar un turno en Barbería Tuty.\n\n" +
+    "Nombre: " + nombreCliente + "\n" +
+    "Teléfono: " + telefonoCliente + "\n" +
+    "Servicio: " + servicioElegido + "\n" +
     "Profesional: " + profesionalElegido;
 
 const enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp +
