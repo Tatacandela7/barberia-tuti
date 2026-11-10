@@ -340,7 +340,12 @@ html {
     transform: translateY(-8px);
     background-color: #252525;
 }
-
+.precio {
+    color: #c59d5f !important;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
 #formulario-reserva h3 {
     color: #c59d5f;
     font-size: 22px;
