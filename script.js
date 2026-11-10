@@ -61,6 +61,21 @@ formulario.addEventListener("submit", function(event) {
     confirmacion.textContent = "¡Gracias, " + nombreCliente +
         "! Recibimos tu solicitud para: " + servicioElegido +
         ". ¡Te esperamos!";
+    // Preparamos el mensaje para WhatsApp
+
+const numeroWhatsApp = "5491168584482";
+
+const mensajeWhatsApp = 
+    "Hola, quiero solicitar un turno en Barbería Tuty.%0A%0A" +
+    "Nombre: " + nombreCliente + "%0A" +
+    "Teléfono: " + telefonoCliente + "%0A" +
+    "Servicio: " + servicioElegido + "%0A" +
+    "Profesional: " + profesionalElegido;
+
+const enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp +
+    "?text=" + encodeURIComponent(mensajeWhatsApp);
+
+window.open(enlaceWhatsApp, "_blank");
 
     // Limpiamos el formulario
 
