@@ -75,7 +75,8 @@ const mensajeWhatsApp =
 const enlaceWhatsApp = "https://wa.me/" + numeroWhatsApp +
     "?text=" + encodeURIComponent(mensajeWhatsApp);
 
-window.open(enlaceWhatsApp, "_blank");
+window.location.href = enlaceWhatsApp;
+    
 
     // Limpiamos el formulario
 
