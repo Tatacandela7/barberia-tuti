@@ -38,10 +38,11 @@ formulario.addEventListener("submit", function(event) {
     // Creamos el objeto de la reserva
 
     const reserva = {
-        nombre: nombreCliente,
-        telefono: telefonoCliente,
-        servicio: servicioElegido
-    };
+    nombre: nombreCliente,
+    telefono: telefonoCliente,
+    servicio: servicioElegido,
+    profesional: profesionalElegido
+};
 
     // Recuperamos las reservas guardadas
 
