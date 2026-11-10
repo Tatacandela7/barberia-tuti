@@ -31,7 +31,8 @@ formulario.addEventListener("submit", function(event) {
     const nombreCliente = document.getElementById("nombre").value;
     const telefonoCliente = document.getElementById("telefono").value;
     const servicioElegido = document.getElementById("servicio").value;
-
+    const profesionalElegido = document.getElementById("profesional").value;
+   
     const confirmacion = document.getElementById("confirmacion-reserva");
 
     // Creamos el objeto de la reserva
